@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rchav\\source\\repos\\Sbeam\\Sbeam\\Sbeam.csproj": {}
+    "C:\\Users\\rchav\\OneDrive\\Documentos\\GitHub\\Sbeam\\Sbeam\\Sbeam\\Sbeam.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rchav\\source\\repos\\Sbeam\\Sbeam\\Sbeam.csproj": {
+    "C:\\Users\\rchav\\OneDrive\\Documentos\\GitHub\\Sbeam\\Sbeam\\Sbeam\\Sbeam.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rchav\\source\\repos\\Sbeam\\Sbeam\\Sbeam.csproj",
+        "projectUniqueName": "C:\\Users\\rchav\\OneDrive\\Documentos\\GitHub\\Sbeam\\Sbeam\\Sbeam\\Sbeam.csproj",
         "projectName": "Sbeam",
-        "projectPath": "C:\\Users\\rchav\\source\\repos\\Sbeam\\Sbeam\\Sbeam.csproj",
+        "projectPath": "C:\\Users\\rchav\\OneDrive\\Documentos\\GitHub\\Sbeam\\Sbeam\\Sbeam\\Sbeam.csproj",
         "packagesPath": "C:\\Users\\rchav\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rchav\\source\\repos\\Sbeam\\Sbeam\\obj\\",
+        "outputPath": "C:\\Users\\rchav\\OneDrive\\Documentos\\GitHub\\Sbeam\\Sbeam\\Sbeam\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -28,32 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            RegisterBtn = new Button();
             Login_link = new Label();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            PasswordInput = new TextBox();
+            UsernameInput = new TextBox();
             label2 = new Label();
             label1 = new Label();
             Login_txt = new Label();
             label5 = new Label();
             label6 = new Label();
-            textBox3 = new TextBox();
+            PasswordCorfirmInput = new TextBox();
             SuspendLayout();
             // 
-            // button1
+            // RegisterBtn
             // 
-            button1.BackColor = Color.FromArgb(42, 71, 94);
-            button1.BackgroundImageLayout = ImageLayout.Zoom;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(425, 413);
-            button1.Name = "button1";
-            button1.Size = new Size(205, 40);
-            button1.TabIndex = 16;
-            button1.Text = "Create Account";
-            button1.UseVisualStyleBackColor = false;
+            RegisterBtn.BackColor = Color.FromArgb(42, 71, 94);
+            RegisterBtn.BackgroundImageLayout = ImageLayout.Zoom;
+            RegisterBtn.FlatAppearance.BorderSize = 0;
+            RegisterBtn.FlatStyle = FlatStyle.Flat;
+            RegisterBtn.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            RegisterBtn.ForeColor = Color.White;
+            RegisterBtn.Location = new Point(425, 413);
+            RegisterBtn.Name = "RegisterBtn";
+            RegisterBtn.Size = new Size(205, 40);
+            RegisterBtn.TabIndex = 3;
+            RegisterBtn.Text = "Create Account";
+            RegisterBtn.UseVisualStyleBackColor = false;
+            RegisterBtn.Click += RegisterBtn_Click;
             // 
             // Login_link
             // 
@@ -64,31 +65,31 @@
             Login_link.Location = new Point(646, 438);
             Login_link.Name = "Login_link";
             Login_link.Size = new Size(157, 15);
-            Login_link.TabIndex = 15;
+            Login_link.TabIndex = 4;
             Login_link.Text = "already have an account?";
             Login_link.Click += Login_link_Click;
             // 
-            // textBox2
+            // PasswordInput
             // 
-            textBox2.BackColor = Color.FromArgb(42, 71, 94);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.FromArgb(199, 213, 224);
-            textBox2.Location = new Point(425, 267);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(327, 29);
-            textBox2.TabIndex = 14;
+            PasswordInput.BackColor = Color.FromArgb(42, 71, 94);
+            PasswordInput.BorderStyle = BorderStyle.None;
+            PasswordInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            PasswordInput.ForeColor = Color.FromArgb(199, 213, 224);
+            PasswordInput.Location = new Point(425, 267);
+            PasswordInput.Name = "PasswordInput";
+            PasswordInput.Size = new Size(327, 29);
+            PasswordInput.TabIndex = 1;
             // 
-            // textBox1
+            // UsernameInput
             // 
-            textBox1.BackColor = Color.FromArgb(42, 71, 94);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.FromArgb(199, 213, 224);
-            textBox1.Location = new Point(425, 199);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(327, 29);
-            textBox1.TabIndex = 13;
+            UsernameInput.BackColor = Color.FromArgb(42, 71, 94);
+            UsernameInput.BorderStyle = BorderStyle.None;
+            UsernameInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            UsernameInput.ForeColor = Color.FromArgb(199, 213, 224);
+            UsernameInput.Location = new Point(425, 199);
+            UsernameInput.Name = "UsernameInput";
+            UsernameInput.Size = new Size(327, 29);
+            UsernameInput.TabIndex = 0;
             // 
             // label2
             // 
@@ -150,31 +151,32 @@
             label6.TabIndex = 19;
             label6.Text = "Re-enter";
             // 
-            // textBox3
+            // PasswordCorfirmInput
             // 
-            textBox3.BackColor = Color.FromArgb(42, 71, 94);
-            textBox3.BorderStyle = BorderStyle.None;
-            textBox3.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox3.ForeColor = Color.FromArgb(199, 213, 224);
-            textBox3.Location = new Point(425, 335);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(327, 29);
-            textBox3.TabIndex = 20;
+            PasswordCorfirmInput.BackColor = Color.FromArgb(42, 71, 94);
+            PasswordCorfirmInput.BorderStyle = BorderStyle.None;
+            PasswordCorfirmInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            PasswordCorfirmInput.ForeColor = Color.FromArgb(199, 213, 224);
+            PasswordCorfirmInput.Location = new Point(425, 335);
+            PasswordCorfirmInput.Name = "PasswordCorfirmInput";
+            PasswordCorfirmInput.Size = new Size(327, 29);
+            PasswordCorfirmInput.TabIndex = 2;
             // 
             // Register
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(42, 71, 94);
             BackgroundImage = Properties.Resources.Register_BG;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1008, 561);
-            Controls.Add(textBox3);
+            Controls.Add(PasswordCorfirmInput);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(button1);
+            Controls.Add(RegisterBtn);
             Controls.Add(Login_link);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(PasswordInput);
+            Controls.Add(UsernameInput);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(Login_txt);
@@ -187,15 +189,15 @@
 
         #endregion
 
-        private Button button1;
+        private Button RegisterBtn;
         private Label Login_link;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox PasswordInput;
+        private TextBox UsernameInput;
         private Label label2;
         private Label label1;
         private Label Login_txt;
         private Label label5;
         private Label label6;
-        private TextBox textBox3;
+        private TextBox PasswordCorfirmInput;
     }
 }

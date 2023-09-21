@@ -63,6 +63,36 @@ namespace Sbeam.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AddGame_BG {
+            get {
+                object obj = ResourceManager.GetObject("AddGame_BG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AppleIcon {
+            get {
+                object obj = ResourceManager.GetObject("AppleIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LinuxIcon {
+            get {
+                object obj = ResourceManager.GetObject("LinuxIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Login_BG {
             get {
                 object obj = ResourceManager.GetObject("Login_BG", resourceCulture);
@@ -93,9 +123,39 @@ namespace Sbeam.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PublishGame_btn_BG {
+            get {
+                object obj = ResourceManager.GetObject("PublishGame_btn_BG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Register_BG {
             get {
                 object obj = ResourceManager.GetObject("Register_BG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SbeamLogo {
+            get {
+                object obj = ResourceManager.GetObject("SbeamLogo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WindowsIcon {
+            get {
+                object obj = ResourceManager.GetObject("WindowsIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

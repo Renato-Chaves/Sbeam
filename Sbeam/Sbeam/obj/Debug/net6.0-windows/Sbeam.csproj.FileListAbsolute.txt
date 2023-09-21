@@ -16,3 +16,13 @@ C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-win
 C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-windows\ref\Sbeam.dll
 C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-windows\Sbeam.Properties.Resources.resources
 C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-windows\Sbeam.Register.resources
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-windows\Sbeam.csproj.AssemblyReference.cache
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-windows\Sbeam.csproj.CopyComplete
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-windows\Sbeam.AddGame.resources
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\bin\Debug\net6.0-windows\MySql.Data.DLL

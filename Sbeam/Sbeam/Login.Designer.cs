@@ -31,10 +31,10 @@
             Login_txt = new Label();
             label1 = new Label();
             label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            UsernameInput = new TextBox();
+            PasswordInput = new TextBox();
             Register_link = new Label();
-            button1 = new Button();
+            Login_btn = new Button();
             SuspendLayout();
             // 
             // Login_txt
@@ -73,27 +73,27 @@
             label2.TabIndex = 2;
             label2.Text = "Password:";
             // 
-            // textBox1
+            // UsernameInput
             // 
-            textBox1.BackColor = Color.FromArgb(42, 71, 94);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.FromArgb(199, 213, 224);
-            textBox1.Location = new Point(415, 229);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(327, 29);
-            textBox1.TabIndex = 3;
+            UsernameInput.BackColor = Color.FromArgb(42, 71, 94);
+            UsernameInput.BorderStyle = BorderStyle.None;
+            UsernameInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            UsernameInput.ForeColor = Color.FromArgb(199, 213, 224);
+            UsernameInput.Location = new Point(415, 229);
+            UsernameInput.Name = "UsernameInput";
+            UsernameInput.Size = new Size(327, 29);
+            UsernameInput.TabIndex = 0;
             // 
-            // textBox2
+            // PasswordInput
             // 
-            textBox2.BackColor = Color.FromArgb(42, 71, 94);
-            textBox2.BorderStyle = BorderStyle.None;
-            textBox2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.FromArgb(199, 213, 224);
-            textBox2.Location = new Point(415, 281);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(327, 29);
-            textBox2.TabIndex = 4;
+            PasswordInput.BackColor = Color.FromArgb(42, 71, 94);
+            PasswordInput.BorderStyle = BorderStyle.None;
+            PasswordInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            PasswordInput.ForeColor = Color.FromArgb(199, 213, 224);
+            PasswordInput.Location = new Point(415, 281);
+            PasswordInput.Name = "PasswordInput";
+            PasswordInput.Size = new Size(327, 29);
+            PasswordInput.TabIndex = 1;
             // 
             // Register_link
             // 
@@ -104,24 +104,25 @@
             Register_link.Location = new Point(581, 388);
             Register_link.Name = "Register_link";
             Register_link.Size = new Size(145, 15);
-            Register_link.TabIndex = 8;
+            Register_link.TabIndex = 3;
             Register_link.Text = "don't have an account?";
             Register_link.Click += Register_link_Click;
             // 
-            // button1
+            // Login_btn
             // 
-            button1.BackColor = Color.FromArgb(42, 71, 94);
-            button1.BackgroundImageLayout = ImageLayout.Zoom;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(415, 363);
-            button1.Name = "button1";
-            button1.Size = new Size(132, 40);
-            button1.TabIndex = 9;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = false;
+            Login_btn.BackColor = Color.FromArgb(42, 71, 94);
+            Login_btn.BackgroundImageLayout = ImageLayout.Zoom;
+            Login_btn.FlatAppearance.BorderSize = 0;
+            Login_btn.FlatStyle = FlatStyle.Flat;
+            Login_btn.Font = new Font("Segoe UI Black", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            Login_btn.ForeColor = Color.White;
+            Login_btn.Location = new Point(415, 363);
+            Login_btn.Name = "Login_btn";
+            Login_btn.Size = new Size(132, 40);
+            Login_btn.TabIndex = 2;
+            Login_btn.Text = "Login";
+            Login_btn.UseVisualStyleBackColor = false;
+            Login_btn.Click += Login_btn_Click;
             // 
             // Login
             // 
@@ -131,10 +132,10 @@
             BackgroundImage = Properties.Resources.Login_BG;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1008, 561);
-            Controls.Add(button1);
+            Controls.Add(Login_btn);
             Controls.Add(Register_link);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(PasswordInput);
+            Controls.Add(UsernameInput);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(Login_txt);
@@ -150,9 +151,9 @@
         private Label Login_txt;
         private Label label1;
         private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox UsernameInput;
+        private TextBox PasswordInput;
         private Label Register_link;
-        private Button button1;
+        private Button Login_btn;
     }
 }

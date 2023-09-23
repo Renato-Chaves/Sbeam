@@ -25,5 +25,12 @@ namespace Sbeam
             }
             finally { conn.Close(); }
         }
+
+        public MySqlConnection DBConnect()
+        {
+            string connectionString = "Data Source=sql10.freesqldatabase.com; username=sql10647862; password=35ASdvQdUI; database=sql10647862";
+            MySqlConnection conn = new MySqlConnection(connectionString);
+            return conn;
+        }
     }
 }

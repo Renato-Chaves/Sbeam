@@ -26,3 +26,4 @@ C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-win
 C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-windows\Sbeam.csproj.CopyComplete
 C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-windows\Sbeam.AddGame.resources
 C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\bin\Debug\net6.0-windows\MySql.Data.DLL
+C:\Users\rchav\OneDrive\Documentos\GitHub\Sbeam\Sbeam\Sbeam\obj\Debug\net6.0-windows\Sbeam.StorePage.resources

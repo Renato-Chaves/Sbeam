@@ -32,9 +32,9 @@
             label1 = new Label();
             label2 = new Label();
             UsernameInput = new TextBox();
-            PasswordInput = new TextBox();
             Register_link = new Label();
             Login_btn = new Button();
+            PasswordInput = new MaskedTextBox();
             SuspendLayout();
             // 
             // Login_txt
@@ -84,17 +84,6 @@
             UsernameInput.Size = new Size(327, 29);
             UsernameInput.TabIndex = 0;
             // 
-            // PasswordInput
-            // 
-            PasswordInput.BackColor = Color.FromArgb(42, 71, 94);
-            PasswordInput.BorderStyle = BorderStyle.None;
-            PasswordInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            PasswordInput.ForeColor = Color.FromArgb(199, 213, 224);
-            PasswordInput.Location = new Point(415, 281);
-            PasswordInput.Name = "PasswordInput";
-            PasswordInput.Size = new Size(327, 29);
-            PasswordInput.TabIndex = 1;
-            // 
             // Register_link
             // 
             Register_link.AutoSize = true;
@@ -124,6 +113,18 @@
             Login_btn.UseVisualStyleBackColor = false;
             Login_btn.Click += Login_btn_Click;
             // 
+            // PasswordInput
+            // 
+            PasswordInput.BackColor = Color.FromArgb(42, 71, 94);
+            PasswordInput.BorderStyle = BorderStyle.None;
+            PasswordInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            PasswordInput.ForeColor = Color.FromArgb(199, 213, 224);
+            PasswordInput.Location = new Point(415, 281);
+            PasswordInput.Name = "PasswordInput";
+            PasswordInput.PasswordChar = '*';
+            PasswordInput.Size = new Size(327, 29);
+            PasswordInput.TabIndex = 1;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -132,9 +133,9 @@
             BackgroundImage = Properties.Resources.Login_BG;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1008, 561);
+            Controls.Add(PasswordInput);
             Controls.Add(Login_btn);
             Controls.Add(Register_link);
-            Controls.Add(PasswordInput);
             Controls.Add(UsernameInput);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -152,8 +153,8 @@
         private Label label1;
         private Label label2;
         private TextBox UsernameInput;
-        private TextBox PasswordInput;
         private Label Register_link;
         private Button Login_btn;
+        private MaskedTextBox PasswordInput;
     }
 }

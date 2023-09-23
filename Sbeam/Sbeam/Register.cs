@@ -28,15 +28,15 @@ namespace Sbeam
 
         private void RegisterBtn_Click(object sender, EventArgs e)
         {
-            if (UsernameInput.Text == "" || PasswordInput.Text == "" || PasswordCorfirmInput.Text == "")
+            if (UsernameInput.Text == "" || PasswordInput.Text == "" || PasswordConfirmInput.Text == "")
             {
                 MessageBox.Show(" Por favor complete todos os campos.");
             }
-            else if (PasswordInput.Text != PasswordCorfirmInput.Text)
+            else if (PasswordInput.Text != PasswordConfirmInput.Text)
             {
                 MessageBox.Show("Senha não condiz com sua confirmação, por favor verifique.");
             }
-            else if (PasswordInput.Text != " " && (PasswordInput.Text != "" || PasswordInput.Text != " ") && PasswordCorfirmInput.Text != " ")
+            else if (PasswordInput.Text != " " && (PasswordInput.Text != "" || PasswordInput.Text != " ") && PasswordConfirmInput.Text != " ")
             {
                 dbConn.Querry(("insert into Users values(null, '" + UsernameInput.Text + "', '" + PasswordInput.Text + "', '" + 0 + "')"));
                 SwitchPages();
@@ -55,9 +55,9 @@ namespace Sbeam
 
         private void CleanInputs()
         {
-            UsernameInput.Text = "";
-            PasswordInput.Text = "";
-            PasswordCorfirmInput.Text = "";
+            UsernameInput.Text = string.Empty;
+            PasswordInput.Text = string.Empty;
+            PasswordConfirmInput.Text = string.Empty;
         }
     }
 }

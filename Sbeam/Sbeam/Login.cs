@@ -15,6 +15,8 @@ namespace Sbeam
     public partial class Login : Form
     {
         Register register;
+        StorePage storePage;
+        private string cd_user;
         public Login()
         {
             InitializeComponent();
@@ -22,17 +24,10 @@ namespace Sbeam
 
         private void Register_link_Click(object sender, EventArgs e)
         {
-            if (register != null)
-            {
-                this.Hide();
-                register.Show();
-            }
-            else
-            {
-                Register register = new Register(this);
-                this.Hide();
-                register.Show();
-            }
+            if (register == null) register = new Register(this);
+            this.Hide();
+            register.Show();
+            CleanInputs();
         }
 
         public void FillRegister(Register _register)
@@ -71,9 +66,13 @@ namespace Sbeam
 
                     if (count == 1)
                     {
-                        AddGame StorePage = new AddGame();
+                        cd_user = ds.Tables[0].Rows[0]["cd_user"].ToString();
+
+                        if (storePage == null) storePage = new StorePage(this, cd_user);
+                        else storePage.AdmCheck(this, cd_user);
                         this.Hide();
-                        StorePage.Show();
+                        CleanInputs();
+                        storePage.Show();
                     }
                     else MessageBox.Show("Nome de usuário e senha incorretos");
                 }
@@ -84,6 +83,12 @@ namespace Sbeam
                 finally { conn.Close(); }
 
             }
+        }
+
+        private void CleanInputs()
+        {
+            UsernameInput.Text = string.Empty;
+            PasswordInput.Text = string.Empty;
         }
     }
 }

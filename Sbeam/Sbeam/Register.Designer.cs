@@ -30,14 +30,14 @@
         {
             RegisterBtn = new Button();
             Login_link = new Label();
-            PasswordInput = new TextBox();
             UsernameInput = new TextBox();
             label2 = new Label();
             label1 = new Label();
             Login_txt = new Label();
             label5 = new Label();
             label6 = new Label();
-            PasswordCorfirmInput = new TextBox();
+            PasswordInput = new MaskedTextBox();
+            PasswordConfirmInput = new MaskedTextBox();
             SuspendLayout();
             // 
             // RegisterBtn
@@ -68,17 +68,6 @@
             Login_link.TabIndex = 4;
             Login_link.Text = "already have an account?";
             Login_link.Click += Login_link_Click;
-            // 
-            // PasswordInput
-            // 
-            PasswordInput.BackColor = Color.FromArgb(42, 71, 94);
-            PasswordInput.BorderStyle = BorderStyle.None;
-            PasswordInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            PasswordInput.ForeColor = Color.FromArgb(199, 213, 224);
-            PasswordInput.Location = new Point(425, 267);
-            PasswordInput.Name = "PasswordInput";
-            PasswordInput.Size = new Size(327, 29);
-            PasswordInput.TabIndex = 1;
             // 
             // UsernameInput
             // 
@@ -151,16 +140,29 @@
             label6.TabIndex = 19;
             label6.Text = "Re-enter";
             // 
-            // PasswordCorfirmInput
+            // PasswordInput
             // 
-            PasswordCorfirmInput.BackColor = Color.FromArgb(42, 71, 94);
-            PasswordCorfirmInput.BorderStyle = BorderStyle.None;
-            PasswordCorfirmInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            PasswordCorfirmInput.ForeColor = Color.FromArgb(199, 213, 224);
-            PasswordCorfirmInput.Location = new Point(425, 335);
-            PasswordCorfirmInput.Name = "PasswordCorfirmInput";
-            PasswordCorfirmInput.Size = new Size(327, 29);
-            PasswordCorfirmInput.TabIndex = 2;
+            PasswordInput.BackColor = Color.FromArgb(42, 71, 94);
+            PasswordInput.BorderStyle = BorderStyle.None;
+            PasswordInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            PasswordInput.ForeColor = Color.FromArgb(199, 213, 224);
+            PasswordInput.Location = new Point(425, 267);
+            PasswordInput.Name = "PasswordInput";
+            PasswordInput.PasswordChar = '*';
+            PasswordInput.Size = new Size(327, 29);
+            PasswordInput.TabIndex = 1;
+            // 
+            // PasswordConfirmInput
+            // 
+            PasswordConfirmInput.BackColor = Color.FromArgb(42, 71, 94);
+            PasswordConfirmInput.BorderStyle = BorderStyle.None;
+            PasswordConfirmInput.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            PasswordConfirmInput.ForeColor = Color.FromArgb(199, 213, 224);
+            PasswordConfirmInput.Location = new Point(425, 335);
+            PasswordConfirmInput.Name = "PasswordConfirmInput";
+            PasswordConfirmInput.PasswordChar = '*';
+            PasswordConfirmInput.Size = new Size(327, 29);
+            PasswordConfirmInput.TabIndex = 2;
             // 
             // Register
             // 
@@ -170,12 +172,12 @@
             BackgroundImage = Properties.Resources.Register_BG;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1008, 561);
-            Controls.Add(PasswordCorfirmInput);
+            Controls.Add(PasswordConfirmInput);
+            Controls.Add(PasswordInput);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(RegisterBtn);
             Controls.Add(Login_link);
-            Controls.Add(PasswordInput);
             Controls.Add(UsernameInput);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -191,13 +193,13 @@
 
         private Button RegisterBtn;
         private Label Login_link;
-        private TextBox PasswordInput;
         private TextBox UsernameInput;
         private Label label2;
         private Label label1;
         private Label Login_txt;
         private Label label5;
         private Label label6;
-        private TextBox PasswordCorfirmInput;
+        private MaskedTextBox PasswordInput;
+        private MaskedTextBox PasswordConfirmInput;
     }
 }

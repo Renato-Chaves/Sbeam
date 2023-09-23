@@ -38,10 +38,10 @@ namespace Sbeam
         {
             try
             {
-                    GameCover.BackgroundImage = null;
-                    imageURL = GameCoverInput.Text;
-                    GameCover.Load(imageURL);
-                    GameCover.SizeMode = PictureBoxSizeMode.Zoom;
+                GameCover.BackgroundImage = null;
+                imageURL = GameCoverInput.Text;
+                GameCover.Load(imageURL);
+                GameCover.SizeMode = PictureBoxSizeMode.Zoom;
             }
             catch
             {
